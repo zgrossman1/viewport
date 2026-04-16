@@ -36,7 +36,12 @@
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
-/* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--dark-gray);
+        color: var(--white);
+    }
+}
 
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
@@ -95,12 +100,12 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
-    @-webkit-keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; }
+@media (prefers-reduced-motion: reduce) {
+    .icon{
+        -webkit-animation: none;
+                animation: none;
     }
-    @keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; }
-    }
+}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
