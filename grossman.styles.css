@@ -1,8 +1,12 @@
-/* YOUR NAME GOES HERE */
+/* Zoe Grossman */
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
-
-
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
 
 /* ----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
 /* ---------- VARIABLES ---------- */
