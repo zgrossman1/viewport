@@ -193,7 +193,7 @@ img{
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-    @media (min-width: 900px) {
+@media (min-width: 900px) {
     header, footer{
         background-color: var(--black);
         color: var(--white);
